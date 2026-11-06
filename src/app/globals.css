@@ -20,6 +20,17 @@
   --font-mono: "Space Mono", "Courier New", monospace;
 }
 
+/* Tema escuro (Matrix): fundo preto, texto verde — ativado por class "dark" (next-themes). */
+.dark {
+  color-scheme: dark;
+  --bg: #000000;
+  --fg: #00ff41;
+  --muted: #00cc33;
+  --border: #1a3d1a;
+  --accent: #00ff41;
+  --accent-hover: #39ff14;
+}
+
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -70,6 +81,13 @@ img {
 
 .site-header {
   padding: 48px 0 64px;
+}
+
+.site-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .site-nav {
