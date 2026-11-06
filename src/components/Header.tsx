@@ -7,13 +7,13 @@ import ThemeToggle from "@/components/ThemeToggle";
 export default function Header() {
   return (
     <header className="site-header">
-      <div className="site-header-row">
+      <div className="site-header-theme">
         <ThemeToggle />
-        <nav className="site-nav site-nav--stacked" aria-label="Main">
-          <Link href="/">portfolio.</Link>
-          <Link href="/about">about.</Link>
-        </nav>
       </div>
+      <nav className="site-nav site-nav--stacked" aria-label="Main">
+        <Link href="/">portfolio.</Link>
+        <Link href="/about">about.</Link>
+      </nav>
     </header>
   );
 }
