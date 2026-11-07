@@ -1,18 +1,21 @@
 [
   {
     "id": "001",
-    "title": "Fleet Management",
-    "description": "ASP.NET Core MVC app to manage drivers, vehicles, and maintenance records. Role-based access (Admin/User), SQL Server with EF Core migrations, stored procedures, delete-audit triggers, and PDF exports with optional email delivery.",
-    "tags": ["ASP.NET Core", "C#", "SQL Server", "Entity Framework", "Identity"],
+    "title": "Fleet Management - AI Assistant",
+    "description": "ASP.NET Core MVC app to manage drivers, vehicles, and maintenance records. Role-based access (Admin/User), SQL Server with EF Core migrations, stored procedures, delete-audit triggers, and PDF exports with optional email delivery. Includes a bilingual (EN/PT) AI assistant, available on every page, that answers natural-language questions about fleet data using LLM function calling, with read-only, GDPR-aware data access.",
+    "tags": ["ASP.NET Core", "C#", "SQL Server", "Entity Framework", "Identity", "Microsoft.Extensions.AI", "Ollama"],
     "date": "2026-04",
     "github": "https://github.com/dot-groovy/FleetManagement",
+    "videos": [
+      "/videos/fleetmanagement/video2.mp4",
+      "/videos/fleetmanagement/video1.mp4"
+    ],
     "images": [
       "/images/fleet-management/print1.jpg",
       "/images/fleet-management/print2.jpg",
       "/images/fleet-management/print3.jpg",
       "/images/fleet-management/print4.jpg"
-    ],
-    "video": "/videos/video1.mp4"
+    ]
   },
   {
     "id": "002",

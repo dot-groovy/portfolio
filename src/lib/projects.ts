@@ -7,14 +7,11 @@ const DATA_PATH = path.join(process.cwd(), "data", "projects.json");
 
 /**
  * Lê o ficheiro `data/projects.json` e devolve todos os projetos
- * ordenados por data, do mais recente para o mais antigo.
+ * pela ordem em que aparecem no ficheiro.
  */
 export function getProjects(): Project[] {
   const raw = fs.readFileSync(DATA_PATH, "utf-8");
-  const projects: Project[] = JSON.parse(raw);
-  return projects.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  return JSON.parse(raw) as Project[];
 }
 
 /**
