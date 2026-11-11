@@ -1,3 +1,3 @@
-**A personal website that presents my projects in a timeline.**
+**A personal website that presents my projects.**
 
 https://dot-groovy.github.io/portfolio/
