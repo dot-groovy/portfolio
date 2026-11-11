@@ -1,2 +1,2 @@
 
-https://dot-groovy.github.io/portofolio/
+https://dot-groovy.github.io/portfolio/
