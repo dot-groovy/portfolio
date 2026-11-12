@@ -15,7 +15,6 @@ interface Props {
   images?: string[];
   video?: string;
   videos?: string[];
-  /** Media vertical (telemóvel): zoom e carrossel mais altos. */
   mediaZoom?: "mobile";
 }
 
@@ -23,9 +22,6 @@ type Slide =
   | { kind: "image"; src: string; alt: string }
   | { kind: "video"; src: string };
 
-/**
- * Carrossel: vídeo primeiro, depois imagens. Clique abre zoom; clique no fundo fecha.
- */
 export default function ProjectMediaCarousel({
   basePath,
   title,

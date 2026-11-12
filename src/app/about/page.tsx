@@ -8,9 +8,6 @@ export const metadata: Metadata = {
   description: "About me and my path in technology.",
 };
 
-/**
- * Página About — breve introdução pessoal.
- */
 export default function AboutPage() {
   return (
     <div className="page-wrapper">

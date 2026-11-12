@@ -6,7 +6,7 @@ import ProjectMediaCarousel from "@/components/ProjectMediaCarousel";
 import { getProjectById, getProjects } from "@/lib/projects";
 import { notFound } from "next/navigation";
 
-/** Gera uma página estática por projeto (necessário para GitHub Pages). */
+// Necessário para build estático (GitHub Pages).
 export function generateStaticParams() {
   return getProjects().map((project) => ({ id: project.id }));
 }
@@ -15,18 +15,12 @@ interface Props {
   params: Promise<{ id: string }>;
 }
 
-/**
- * Página de detalhe de um projeto (rota `/project/[id]`).
- * Procura o projeto pelo `id` da URL; se não existir, devolve 404.
- * Mostra título, data, tags, imagem (opcional), descrição e links externos.
- */
 export default async function ProjectPage({ params }: Props) {
   const { id } = await params;
   const project = getProjectById(id);
 
   if (!project) notFound();
 
-  // Formata a data como mês e ano (ex.: "May 2026").
   const date = new Date(project.date).toLocaleDateString("en-US", {
     month: "long",
     year: "numeric",

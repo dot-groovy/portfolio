@@ -4,12 +4,10 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-// Caminho do GitHub Pages: https://dot-groovy.github.io/portfolio/
-// (O repo no GitHub tem de chamar-se `portofolio` — renomeia em Settings se ainda for `portofolio.ts`.)
+// Igual ao nome do repositório no GitHub (URL: dot-groovy.github.io/portfolio/).
 const repo = "portfolio";
 const isGhPages = process.env.GITHUB_PAGES === "true";
 
-// Configuração do Next.js.
 const basePath = isGhPages ? `/${repo}` : "";
 
 const nextConfig: NextConfig = {

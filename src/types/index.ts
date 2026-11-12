@@ -1,7 +1,4 @@
-/**
- * Representa um projeto do portfólio.
- * Os campos `url`, `github`, `image`, `images` e `video` são opcionais.
- */
+// Campos de media: videos[] (ordem do carrossel), depois images[].
 export interface Project {
   id: string;
   title: string;
@@ -10,14 +7,9 @@ export interface Project {
   date: string;
   url?: string;
   github?: string;
-  /** Imagem única (legado). Preferir `images` para galeria com slide. */
   image?: string;
-  /** Caminhos em `public/` para o carrossel (ex.: `/images/projeto/1.png`). */
   images?: string[];
-  /** Caminho em `public/` (ex.: `/videos/demo.mp4`). */
   video?: string;
-  /** Vários vídeos no carrossel (antes das imagens). Se vazio, usa `video`. */
   videos?: string[];
-  /** Zoom ampliado para media vertical (ex.: gravações de telemóvel). */
   mediaZoom?: "mobile";
 }

@@ -1,9 +1,6 @@
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 
-/**
- * Cabeçalho do site. Navegação principal (portfolio / about) em coluna.
- */
 export default function Header() {
   return (
     <header className="site-header">

@@ -1,6 +1,3 @@
-/**
- * Rodapé do site. Marca "original" e links para GitHub e LinkedIn.
- */
 export default function Footer() {
   return (
     <footer className="site-footer">

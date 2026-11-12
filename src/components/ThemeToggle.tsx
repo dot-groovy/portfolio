@@ -25,7 +25,6 @@ function Sun({ color }: { color: string }) {
   );
 }
 
-/** Retângulo lua | sol: um clique em qualquer sítio alterna o tema. */
 export default function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);

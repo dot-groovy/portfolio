@@ -3,10 +3,6 @@ import Footer from "@/components/Footer";
 import Timeline from "@/components/Timeline";
 import { getProjects } from "@/lib/projects";
 
-/**
- * Página inicial. Carrega todos os projetos e mostra-os numa timeline,
- * com um texto de introdução e a contagem total.
- */
 export default function Home() {
   const projects = getProjects();
 
@@ -16,7 +12,7 @@ export default function Home() {
       <main className="main-content">
         <div className="timeline-intro fade-in">
           <h1>
-            Projects i've built, explored, and shipped.
+            Projects i've built and explored.
           </h1>
           <p>{projects.length} projects</p>
         </div>

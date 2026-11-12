@@ -20,7 +20,7 @@
   --font-mono: "Space Mono", "Courier New", monospace;
 }
 
-/* Tema escuro (Matrix): fundo preto, texto verde — ativado por class "dark" (next-themes). */
+/* Tema escuro: ativado por class "dark" no <html> (next-themes). */
 .dark {
   color-scheme: dark;
   --bg: #000000;
@@ -61,7 +61,6 @@ img {
   display: block;
 }
 
-/* ---- Layout ---- */
 
 .page-wrapper {
   max-width: 720px;
@@ -77,7 +76,6 @@ img {
   padding-bottom: 80px;
 }
 
-/* ---- Header ---- */
 
 .site-header {
   padding: 48px 0 64px;
@@ -86,8 +84,7 @@ img {
   align-items: flex-start;
 }
 
-/* Toggle no canto superior esquerdo; nav por baixo (mesma coluna que o título). */
-/* Sai do padding do .page-wrapper e cola à borda esquerda do ecrã (respeita safe-area no iOS). */
+/* Compensa padding do .page-wrapper para colar o toggle à esquerda do ecrã. */
 .site-header-theme {
   margin-bottom: 20px;
   margin-left: calc(50% - 44vw);
@@ -133,7 +130,6 @@ img {
   width: 100%;
 }
 
-/* ---- About ---- */
 
 .about-page {
   max-width: 560px;
@@ -161,7 +157,6 @@ img {
   color: var(--fg);
 }
 
-/* ---- Footer ---- */
 
 .site-footer {
   padding: 32px 0;
@@ -186,7 +181,6 @@ img {
   color: var(--fg);
 }
 
-/* ---- Timeline ---- */
 
 .timeline-intro {
   margin-bottom: 64px;
@@ -220,7 +214,6 @@ img {
   border-bottom: 1px solid var(--border);
 }
 
-/* ---- Project Entry (timeline item) ---- */
 
 .project-entry {
   display: grid;
@@ -289,7 +282,6 @@ img {
   border-color: var(--fg);
 }
 
-/* ---- Project Detail Page ---- */
 
 .project-detail {
   padding-top: 16px;
@@ -470,7 +462,6 @@ img {
   vertical-align: top;
 }
 
-/* LocalApp / gravações verticais de telemóvel (sem faixas --bg ao lado) */
 .project-media-zoom-media--mobile {
   display: block;
   width: auto;
@@ -547,7 +538,6 @@ img {
   color: var(--bg);
 }
 
-/* ---- Animations ---- */
 
 @keyframes fadeIn {
   from {
@@ -573,7 +563,6 @@ img {
 .stagger-7 { animation-delay: 0.35s; }
 .stagger-8 { animation-delay: 0.4s; }
 
-/* ---- 404 ---- */
 
 .not-found {
   display: flex;
@@ -597,7 +586,6 @@ img {
   font-size: 0.85rem;
 }
 
-/* ---- Responsive ---- */
 
 @media (max-width: 600px) {
   .site-header {
